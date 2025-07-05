@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Greenden</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-green-100 dark:bg-gray-900 text-black dark:text-white">
+
+  <header class="bg-green-300 shadow-md">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="font-bold text-lg">Greenden</h1>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="products.html" class="hover:underline">Products</a>
+        <a href="about.html" class="hover:underline">About</a>
+        <a href="contact.html" class="hover:underline">Contact</a>
+      </nav>
+
+      <!-- Mobile Hamburger -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu  -->
+    <nav id="mobile-menu" class="hidden flex-col space-y-2 px-6 pb-4 md:hidden">
+      <a href="index.html" class="block hover:underline">Home</a>
+      <a href="products.html" class="block hover:underline">Products</a>
+      <a href="about.html" class="block hover:underline">About</a>
+      <a href="contact.html" class="block hover:underline">Contact</a>
+    </nav>
+  </header>
+
+
+  <!-- Hero -->
+  <section class="bg-green-200 dark:bg-gray-700 py-10">
+    <div class="container mx-auto flex flex-col md:flex-row items-center px-6">
+      <div class="md:w-1/2">
+        <p class="font-semibold mb-2">We offer you a wide range of Artificial and Natural Flowers</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Plants for your Interior</h2>
+        <div class="flex space-x-4 mb-4">
+          <button class="bg-black dark:bg-green-600 text-white py-2 px-4 rounded hover:bg-green-800 transition">Shop
+            Now</button>
+          <button
+            class="border border-black dark:border-white py-2 px-4 rounded hover:bg-black hover:text-white transition">Watch
+            Video</button>
+        </div>
+        <p class="font-semibold">160+ Plant Species | 100+ Clients</p>
+      </div>
+      <div class="md:w-1/2 mt-6 md:mt-0 flex justify-center">
+        <img src="./Images/Front.jpg" alt="Plant" class="rounded shadow-md">
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="bg-green-300 dark:bg-gray-800 py-10">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-2xl font-bold mb-2">About Us</h3>
+      <p class="mb-8">The Site For those who admire the beauty and harmony of nature</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white dark:bg-gray-700 p-6 rounded shadow-card hover:shadow-lg transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto mb-4 text-green-500" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 17v-6h13M5 12H3M5 6h2M5 18h2m6-6V6m0 12v-6" />
+          </svg>
+          <h4 class="font-bold mb-2">Large Assortment</h4>
+          <p class="text-sm">Huge variety of indoor and outdoor plants at best prices.</p>
+        </div>
+        <div class="bg-white dark:bg-gray-700 p-6 rounded shadow-card hover:shadow-lg transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto mb-4 text-green-500" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h11M9 21V3M16 17l5-5-5-5" />
+          </svg>
+          <h4 class="font-bold mb-2">Fast Shipping</h4>
+          <p class="text-sm">Free delivery within 3-5 business days. We ensure fresh plants!</p>
+        </div>
+        <div class="bg-white dark:bg-gray-700 p-6 rounded shadow-card hover:shadow-lg transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto mb-4 text-green-500" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 5h2l3.6 7.59-1.35 2.44A1 1 0 008 17h10m4 0a1 1 0 001-1V7a1 1 0 00-1-1H5m14 0l-4 8" />
+          </svg>
+          <h4 class="font-bold mb-2">24/7 Support</h4>
+          <p class="text-sm">Our team is always here to assist you with your plant care.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="bg-green-200 dark:bg-gray-800 py-10">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-2xl font-bold mb-6">Our Beautiful Plants</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="./Images/Antirrhinum.jpg" class="rounded shadow">
+        <img src="./Images/Baby Roses.jpg" class="rounded shadow">
+        <img src="./Images/Christmas Cactus.jpg" class="rounded shadow">
+        <img src="./Images/Garden Roses.jpg" class="rounded shadow">
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="bg-green-100 dark:bg-gray-900 py-10">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-2xl font-bold mb-6">Our Pricing</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white dark:bg-gray-700 p-6 rounded shadow">
+          <h4 class="font-bold mb-2">Basic</h4>
+          <img src="./Images/1.jpg" class="rounded shadow">
+          <p class="text-2xl mb-2">LKR 25000</p>
+          <p class="mb-4">5 plants + free shipping</p>
+          <button
+            class="bg-black dark:bg-green-600 text-white px-4 py-2 rounded hover:bg-green-800 transition">Select</button>
+        </div>
+        <div class="bg-white dark:bg-gray-700 p-6 rounded shadow">
+          <h4 class="font-bold mb-2">Standard</h4>
+          <img src="./Images/2.jpg" class="rounded shadow">
+          <p class="text-2xl mb-2">LKR 52000</p>
+          <p class="mb-4">15 plants + care guide</p>
+          <button
+            class="bg-black dark:bg-green-600 text-white px-4 py-2 rounded hover:bg-green-800 transition">Select</button>
+        </div>
+        <div class="bg-white dark:bg-gray-700 p-6 rounded shadow">
+          <h4 class="font-bold mb-2">Premium</h4>
+          <img src="./Images/3.jpg" class="rounded shadow">
+          <p class="text-2xl mb-2">LKR 95000</p>
+          <p class="mb-4">30 plants + priority support</p>
+          <button
+            class="bg-black dark:bg-green-600 text-white px-4 py-2 rounded hover:bg-green-800 transition">Select</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="bg-green-100 dark:bg-gray-900 py-10">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-2xl font-bold mb-6">What Our Customers Say</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white dark:bg-gray-700 p-4 rounded shadow">
+          <p class="italic">"Absolutely love these plants! My home looks so fresh."</p>
+          <p class="mt-2 font-bold">– Mohamed</p>
+        </div>
+        <div class="bg-white dark:bg-gray-700 p-4 rounded shadow">
+          <p class="italic">"Great quality and fast shipping. Highly recommend!"</p>
+          <p class="mt-2 font-bold">– Ansif</p>
+        </div>
+        <div class="bg-white dark:bg-gray-700 p-4 rounded shadow">
+          <p class="italic">"Excellent support team, very friendly and helpful."</p>
+          <p class="mt-2 font-bold">– Safa</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+ <section class="bg-green-200 dark:bg-gray-800 py-10">
+  <div class="container mx-auto px-6">
+    <h3 class="text-2xl font-bold mb-6 text-center">FAQs</h3>
+    <div class="space-y-4">
+
+      <div class="bg-white dark:bg-gray-700 p-4 rounded shadow">
+        <h4 class="font-bold">How long does shipping take?</h4>
+        <p>Usually 3-5 business days depending on location.</p>
+      </div>
+
+      <div class="bg-white dark:bg-gray-700 p-4 rounded shadow">
+        <h4 class="font-bold">Do you offer plant care tips?</h4>
+        <p>Yes! Every order includes a care guide.</p>
+      </div>
+
+      <div class="bg-white dark:bg-gray-700 p-4 rounded shadow">
+        <h4 class="font-bold">Can I return a plant?</h4>
+        <p>Returns are accepted within 7 days for damaged or unhealthy plants.</p>
+      </div>
+
+      <div class="bg-white dark:bg-gray-700 p-4 rounded shadow">
+        <h4 class="font-bold">Do you deliver nationwide?</h4>
+        <p>Yes, we deliver across Sri Lanka.</p>
+      </div>
+
+      <div class="bg-white dark:bg-gray-700 p-4 rounded shadow">
+        <h4 class="font-bold">What payment methods are accepted?</h4>
+        <p>We accept cards, bank transfers, and cash on delivery in select areas.</p>
+      </div>
+
+      <div class="bg-white dark:bg-gray-700 p-4 rounded shadow">
+        <h4 class="font-bold">How do I track my order?</h4>
+        <p>You will receive a tracking link via email or SMS after ordering.</p>
+      </div>
+
+      <div class="bg-white dark:bg-gray-700 p-4 rounded shadow">
+        <h4 class="font-bold">Do you provide bulk discounts?</h4>
+        <p>Yes, contact us for bulk pricing options.</p>
+      </div>
+
+      <div class="bg-white dark:bg-gray-700 p-4 rounded shadow">
+        <h4 class="font-bold">Can I request a custom bouquet?</h4>
+        <p>Yes, we’re happy to create custom arrangements upon request.</p>
+      </div>
+
+      <div class="bg-white dark:bg-gray-700 p-4 rounded shadow">
+        <h4 class="font-bold">What if my plant arrives damaged?</h4>
+        <p>Contact us within 24 hours and we’ll replace or refund your order.</p>
+      </div>
+
+      <div class="bg-white dark:bg-gray-700 p-4 rounded shadow">
+        <h4 class="font-bold">Can I change or cancel my order?</h4>
+        <p>Orders can be changed or canceled within 2 hours of placement.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Call-to-action -->
+  <section class="bg-green-500 dark:bg-green-700 text-white py-6">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+      <h4 class="text-xl font-bold mb-4 md:mb-0">Ready to fill your home with green?</h4>
+      <button class="bg-black text-white px-4 py-2 rounded hover:bg-green-900 transition">Get Started</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-300 dark:bg-gray-800 py-8 mt-8">
+    <div class="container mx-auto px-6 text-center">
+      <h4 class="font-bold mb-2">Subscribe to our newsletter</h4>
+      <form class="flex flex-col md:flex-row justify-center items-center gap-4">
+        <input type="email" placeholder="Enter your email" class="px-4 py-2 rounded border dark:border-white w-64">
+        <button
+          class="bg-black dark:bg-green-600 text-white px-4 py-2 rounded hover:bg-green-800 transition">Subscribe</button>
+      </form>
+      <p class="mt-4 text-sm">MOHAMED ANSIF © 2025 Greenden. All rights reserved.</p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+  </footer>
+
+  <!-- dark mode toggle -->
+  <button onclick="document.documentElement.classList.toggle('dark')"
+    class="fixed bottom-4 right-4 bg-black text-white px-3 py-1 rounded">Toggle Dark</button>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          boxShadow: {
+            'card': '0 4px 14px rgba(0,0,0,0.1)',
+          }
+        }
+      }
+    }
+
+
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+
+  </script>
+</body>
+
+</html>
